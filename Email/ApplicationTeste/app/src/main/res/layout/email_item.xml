@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/card_view_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/text_icon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:textSize="24dp"
+            tools:text="F"
+            android:textColor="@android:color/white"
+            android:background="@drawable/circle"
+            android:gravity="center">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_user"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Facebook"
+            android:layout_marginStart="16dp"
+            android:layout_toEndOf="@id/text_icon"
+            android:layout_alignTop="@id/text_icon"
+            android:textColor="@color/colorGrey"
+            android:layout_toStartOf="@id/text_date">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_assunto"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/text_user"
+            android:layout_below="@id/text_user"
+            android:textColor="@color/colorGrey"
+            tools:text="assunto assunto assunto assunto assunto assunto assunto assunto assunto">
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_preview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@id/text_user"
+            android:layout_below="@id/text_assunto"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="16dp"
+            android:textColor="@color/colorGrey"
+            android:layout_marginEnd="24dp"
+            tools:text="preview preview preview preview preview preview preview preview">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/text_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_below="@id/text_user"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:textSize="16dp"
+            android:textColor="@color/colorGrey"
+            android:layout_marginEnd="24dp"
+            tools:text="30 mar">
+        </TextView>
+        
+        <ImageView
+            android:id="@+id/img_star"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/baseline_star_border_24">
+        </ImageView>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
