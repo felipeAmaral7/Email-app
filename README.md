@@ -20,7 +20,7 @@ Um aplicativo de e-mails simples e intuitivo que permite visualizar, organizar e
   - Toque no ícone de estrela para marcar ou desmarcar um e-mail como favorito.
 
 ## 🖼️ Capturas de Tela 
-<img src="Images/screenshotApp.png" width=300/>
+<img src="Images/screenshotApp.png" width=200/>
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -40,7 +40,7 @@ git clone https://github.com/felipeAmaral7/Email-app.git
 
 4. Execute o app.
 
-##📌 Notas
+## 📌 Notas
 Os e-mails são fictícios e armazenados apenas em memória (não persistem ao fechar o app).
 
 A criação de novos e-mails é feita usando dados gerados automaticamente (ex: remetente, assunto, corpo).
