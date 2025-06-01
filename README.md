@@ -19,9 +19,8 @@ Um aplicativo de e-mails simples e intuitivo que permite visualizar, organizar e
 - ⭐ **Marcar como favorito**
   - Toque no ícone de estrela para marcar ou desmarcar um e-mail como favorito.
 
-## 🖼️ Capturas de Tela (opcional)
-
-
+## 🖼️ Capturas de Tela 
+![Tela principal do app](images/screenshotApp.png)
 
 ## 🛠️ Tecnologias Utilizadas
 
