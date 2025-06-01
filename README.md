@@ -33,7 +33,7 @@ Um aplicativo de e-mails simples e intuitivo que permite visualizar, organizar e
 ## 🚀 Como Rodar o Projeto
 
 1. Clone o repositório:
-git clone https://github.com/seu-usuario/EmailApp.git
+git clone https://github.com/felipeAmaral7/Email-app.git
 
 2. Abra o projeto no Android Studio.
 
