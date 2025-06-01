@@ -65,6 +65,19 @@ public class EmailAdapter extends RecyclerView.Adapter<EmailAdapter.EmailViewHol
             stared.setImageResource(email.isStared() ? R.drawable.baseline_star_24 : R.drawable.baseline_star_border_24);
 
         }
+
+        void changeStared(Email email) {
+            stared.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    email.setStared(!email.isStared());
+                    stared.setImageResource(
+                            email.isStared() ?
+                                    R.drawable.baseline_star_24 :
+                                    R.drawable.baseline_star_border_24);
+                }
+            });
+        }
     }
 
     private static ShapeDrawable oval(@ColorInt int color, View view){
@@ -90,6 +103,7 @@ public class EmailAdapter extends RecyclerView.Adapter<EmailAdapter.EmailViewHol
     public void onBindViewHolder(@NonNull EmailViewHolder holder, int position) {
         Email email = emails.get(position);
         holder.bind(email);
+        holder.changeStared(email);
 
     }
 
